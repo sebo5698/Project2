@@ -18,8 +18,8 @@ public:
     string getCustomerName();
     void setCustomerName(string);
     int getPurchasesAt(int);
-    bool setPurchaseAt(int,int);
+    bool setPurchasesAt(int,int);
     int getNumUniquePurchases();
-    void getSize();
+    int getSize();
 };
 
