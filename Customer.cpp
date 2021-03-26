@@ -45,9 +45,11 @@ string Customer::getCustomerName()
 
 int Customer::getPurchasesAt(int place)
 {
-    if(place<=size&&place>=0){        
+    if(place<=size&&place>=0){   
+
     return purchase[place];
-    }else
+    }
+    else
     {
         return -1;
     }
@@ -79,7 +81,7 @@ int Customer::getTotalPurchaseCount()
 
 bool Customer::setPurchasesAt(int userimputposition,int newvalue)
 {
-    if(userimputposition<size&&userimputposition>=0){
+    if(userimputposition<size&&userimputposition>0){
         
         purchase[userimputposition]={newvalue};
         return true;
