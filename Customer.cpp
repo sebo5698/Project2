@@ -37,7 +37,7 @@ string Customer::getCustomerName()
 
 int Customer::getPurchasesAt(int place)
 {
-    if(place<=size&&place>0){
+    if(place<=size-1&&place>=0){
     return purchase[place];
     }else
     {
