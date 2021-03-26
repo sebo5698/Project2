@@ -17,7 +17,11 @@ Customer::Customer(string namecust,int purchases[],int sizearr)
 {
     customerName=namecust;
     size=sizearr;
-    purchases[sizearr]=purchase[sizearr];
+    for (int i = 0; i < size; i++)
+    {
+        purchase[i]=purchases[i];
+    }
+    
 }
 
 void Customer::setCustomerName(string namescust)
