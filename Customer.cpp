@@ -30,3 +30,12 @@ string Customer::getCustomerName()
     return customerName;
 }
 
+int Customer::getPurchasesAt(int place)
+{
+    if(place<=size&&place>0){
+    return purchase[place];
+    }else
+    {
+        return -1;
+    }
+}
