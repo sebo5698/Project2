@@ -42,11 +42,6 @@ int Customer::getPurchasesAt(int place)
 
 int Customer::getTotalPurchaseCount()
 {
-    return size;
-}
-
-int Customer::getTotalPurchaseCount()
-{
     int addition=0;
     for (int i = 0; i < size; i++)
     {
