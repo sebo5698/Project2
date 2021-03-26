@@ -10,7 +10,6 @@ using namespace std;
 Customer::Customer()
 {
     customerName="";
-    size=size;
     for (int i = 0; i < size; i++)
     {
         purchase[i]=0;
