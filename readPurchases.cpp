@@ -76,10 +76,15 @@ int split (string splitstr,char separator,string finalarray[],int sizefinal)
 int readPurchases(string Filename,Customer arrcust[],int customstored,int custarrsize,int maxcol)
 {
     ifstream fileopen;
+    string line;
     fileopen.open(Filename);
     if(fileopen.is_open())
     {
-
+        while (getline(fileopen,line))
+        {
+            /* code */
+        }
+        
     }
     else
     {
