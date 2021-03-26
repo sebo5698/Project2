@@ -18,7 +18,7 @@ Customer::Customer()
 Customer::Customer(string namecust,int purchases[],int sizearr)
 {
     customerName=namecust;
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < sizearr; i++)
     {
         purchase[i]=purchases[i];
     }
@@ -37,7 +37,7 @@ string Customer::getCustomerName()
 
 int Customer::getPurchasesAt(int place)
 {
-    if(place<=size-1&&place>=0){
+    if(place<=size&&place>0){        
     return purchase[place];
     }else
     {
@@ -70,7 +70,7 @@ int Customer::getTotalPurchaseCount()
 
 bool Customer::setPurchasesAt(int userimputposition,int newvalue)
 {
-    if(userimputposition<=size&&userimputposition>0){
+    if(userimputposition<size-1&&userimputposition>=0){
         
         purchase[userimputposition]={newvalue};
         return true;
