@@ -40,6 +40,19 @@ int Customer::getPurchasesAt(int place)
     }
 }
 
+int Customer::getNumUniquePurchases()
+{
+    int uniquepu=0;
+    for (int i = 0; i < size; i++)
+    {
+        if(purchase[i]!=0)
+        {
+            uniquepu++;
+        }
+    }
+    
+}
+
 int Customer::getTotalPurchaseCount()
 {
     int addition=0;
