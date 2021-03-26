@@ -18,7 +18,7 @@ public:
     string getCustomerName();
     void setCustomerName(string);
     int getPurchasesAt(int);
-    void setPurchaseAt(int,int);
+    bool setPurchaseAt(int,int);
     int getNumUniquePurchases();
     void getSize();
 };

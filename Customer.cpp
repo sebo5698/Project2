@@ -39,3 +39,20 @@ int Customer::getPurchasesAt(int place)
         return -1;
     }
 }
+
+bool Customer::setPurchaseAt(int userimputposition,int newvalue)
+{
+    if(userimputposition<=size&&userimputposition>0){
+        
+        purchase[userimputposition]={newvalue};
+        return true;
+    }else
+    {
+        return false;
+    }
+}
+
+int Customer::getSize()
+{
+    return size;
+}
