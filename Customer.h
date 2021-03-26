@@ -19,6 +19,7 @@ public:
     void setCustomerName(string);
     int getPurchasesAt(int);
     bool setPurchasesAt(int,int);
+    int getTotalPurchaseCount();
     int getNumUniquePurchases();
     int getSize();
 };

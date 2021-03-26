@@ -40,7 +40,22 @@ int Customer::getPurchasesAt(int place)
     }
 }
 
-bool Customer::setPurchaseAt(int userimputposition,int newvalue)
+int Customer::getTotalPurchaseCount()
+{
+    return size;
+}
+
+int Customer::getTotalPurchaseCount()
+{
+    int addition=0;
+    for (int i = 0; i < size; i++)
+    {
+        addition=addition+purchase[i];
+    }
+    return addition;
+}
+
+bool Customer::setPurchasesAt(int userimputposition,int newvalue)
 {
     if(userimputposition<=size&&userimputposition>0){
         
