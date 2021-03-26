@@ -4,14 +4,17 @@
 #include <string>
 #include <vector>
 
+#ifndef CUSTOMER_H
+#define CUSTOMER_H
+
 using namespace std;
 
 class Customer
 {
 private:
     string customerName;
+    int size=50;
     int purchase[50];
-    int size;
 public:
     Customer();
     Customer(string,int[],int);
@@ -23,4 +26,5 @@ public:
     int getNumUniquePurchases();
     int getSize();
 };
+#endif 
 
