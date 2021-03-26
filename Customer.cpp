@@ -10,7 +10,7 @@ using namespace std;
 Customer::Customer()
 {
     customerName="";
-    size=50;
+    size=size;
     for (int i = 0; i < size; i++)
     {
         purchase[i]=0;
@@ -19,7 +19,6 @@ Customer::Customer()
 Customer::Customer(string namecust,int purchases[],int sizearr)
 {
     customerName=namecust;
-    size=sizearr;
     for (int i = 0; i < size; i++)
     {
         purchase[i]=purchases[i];

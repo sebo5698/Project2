@@ -13,7 +13,7 @@ class Customer
 {
 private:
     string customerName;
-    int size=50;
+   const int size=50;
     int purchase[50];
 public:
     Customer();
