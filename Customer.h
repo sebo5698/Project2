@@ -13,8 +13,8 @@ class Customer
 {
 private:
     string customerName;
-   const int size=50;
-    int purchase[50];
+   static const int size=50;
+    int purchase[size];
 public:
     Customer();
     Customer(string,int[],int);
