@@ -73,16 +73,21 @@ int split (string splitstr,char separator,string finalarray[],int sizefinal)
 */
 
 
-int readPurchases(string Filename,Customer arrcust[],int customstored,int custarrsize,int maxcol)
+
+int readPurchases(string Filename,Customer arrcustomer[],int customstored,int custarrsize,int maxcol)
 {
+    if(customstored>=custarrsize)
+    {
+        return -2;
+    }
     ifstream fileopen;
     string line;
     string splitholder[maxcol];
-    int counter=0;
+    int thecounter;
     fileopen.open(Filename);
     if (customstored>0)
     {
-        counter=customstored;
+        thecounter=customstored;
     }
     if(fileopen.is_open())
     {
@@ -94,27 +99,19 @@ int readPurchases(string Filename,Customer arrcust[],int customstored,int custar
             }else
             {
                 split(line,',',splitholder,maxcol);
-                arrcust[counter].setCustomerName(splitholder[0]);
+                arrcustomer[thecounter].setCustomerName(splitholder[0]);
                 for (int i = 1; i < maxcol; i++)
                 {
-                    arrcust[counter].setPurchasesAt(i,stod(splitholder[1]));
+                    arrcustomer[thecounter].setPurchasesAt(i,stoi(splitholder[i]));
                 }
-                if(counter<custarrsize)
-                {
-                counter++;
-                }
-                else
-                {
-                    return -2;
-                }
+                ++thecounter;
 
             }
         }
-        
+        return thecounter;
     }
     else
     {
         return -1;
     }
-
 }
