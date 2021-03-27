@@ -81,7 +81,7 @@ int Customer::getTotalPurchaseCount()
 
 bool Customer::setPurchasesAt(int userimputposition,int newvalue)
 {
-    if(userimputposition<size&&userimputposition>0){
+    if(userimputposition<size&&userimputposition>=0){
         
         purchase[userimputposition]={newvalue};
         return true;
