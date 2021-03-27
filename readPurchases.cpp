@@ -78,7 +78,12 @@ int readPurchases(string Filename,Customer arrcust[],int customstored,int custar
     ifstream fileopen;
     string line;
     string splitholder[maxcol];
+    int counter=0;
     fileopen.open(Filename);
+    if (customstored>0)
+    {
+        counter=customstored;
+    }
     if(fileopen.is_open())
     {
         while (getline(fileopen,line))
@@ -88,7 +93,15 @@ int readPurchases(string Filename,Customer arrcust[],int customstored,int custar
                 continue;
             }else
             {
-                split(line,',',)
+                split(line,',',splitholder,maxcol);
+                arrcust[counter].setCustomerName(splitholder[0]);
+                for (int i = 1; i < maxcol; i++)
+                {
+                    arrcust[counter].setPurchasesAt(i,stod(splitholder[1]));
+                }
+                
+                counter++;
+
             }
         }
         
