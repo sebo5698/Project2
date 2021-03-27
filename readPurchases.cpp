@@ -77,12 +77,19 @@ int readPurchases(string Filename,Customer arrcust[],int customstored,int custar
 {
     ifstream fileopen;
     string line;
+    string splitholder[maxcol];
     fileopen.open(Filename);
     if(fileopen.is_open())
     {
         while (getline(fileopen,line))
         {
-            /* code */
+            if (line=="")
+            {
+                continue;
+            }else
+            {
+                split(line,',',)
+            }
         }
         
     }
