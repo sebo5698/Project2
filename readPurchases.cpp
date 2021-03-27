@@ -99,8 +99,14 @@ int readPurchases(string Filename,Customer arrcust[],int customstored,int custar
                 {
                     arrcust[counter].setPurchasesAt(i,stod(splitholder[1]));
                 }
-                
+                if(counter<custarrsize)
+                {
                 counter++;
+                }
+                else
+                {
+                    return -2;
+                }
 
             }
         }
