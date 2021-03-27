@@ -9,5 +9,32 @@ using namespace std;
 
 int getPurchasedQuantity (string customename,string prodname,Customer CustomrsArr[],Product prodsArr[],int custarrsi,int productArrsiz)
 {
+    bool customer=false;
+    bool prod=false;
+    int valuer=0;
+    for (int i = 0; i < custarrsi; i++)
+    {
+        customer=false;
+        prod=false;
+        if(CustomrsArr[i].getCustomerName()==customename)
+        {
+            customer=true;
+        }
+        for (int j = 0; j < productArrsiz; j++)
+        {
+            if(prodsArr[i].getName()==prodname)
+            {
+                prodname=true;
+                if(customer==true)
+                {
+                    valuer=CustomrsArr[i].getPurchasesAt(j);
+                    return valuer;
+                }
+            }
+        }
+        
+
+    }
+    
     
 }
