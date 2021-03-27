@@ -28,13 +28,20 @@ int getPurchasedQuantity (string customename,string prodname,Customer CustomrsAr
                 if(customer==true)
                 {
                     valuer=CustomrsArr[i].getPurchasesAt(j);
-                    return valuer;
+                    break;
                 }
             }
         }
-        
-
+        if(customer==true && prod==true)
+        {
+            break;
+        }
     }
-    
-    
+    if(customer==true && prod==true)
+    {
+        return valuer;
+    }else
+    {
+        return -3;
+    }
 }
