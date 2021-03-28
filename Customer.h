@@ -1,3 +1,8 @@
+// CS1300 Spring 2021
+// Author: Sergio Borrego
+// Recitation: 119 – Christen Malloy
+// Project 2 - Problem # 6 Products Classfile
+
 #include <iostream>
 #include <iomanip>
 #include <cmath>
