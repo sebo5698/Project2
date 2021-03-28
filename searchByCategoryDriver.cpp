@@ -69,37 +69,52 @@ int split (string splitstr,char separator,string finalarray[],int sizefinal)
     //here will just return the times splited
     return splittime;
 }
-
+/*
+    This is a function that will try to find poducts with a sertain word and a specific category
+    and will return how many were found
+*/
 int searchNameCategory(string category,string namecategory,Product listp[],int prodstored)
 {
+    //I create a counter that will tell us hoe many were find and a dummy
     int dummy=0;
     int counter=0;
+    //two string one will be the substring to find the word and the other the product name to get the lenght
     string thesub;
     string prodname;
+    //the size of the array lenght of the string that is the product name and the lenght of the specific word
     int products[50];
     int lenght;
     int wordlenght;
+    //A variable to check if its true or falce
     bool wordmatches=false;
     int productprinted=0;
     for(int i = 0; i < prodstored; i++)
     {
+        // we set the name of the first item on the list with a for loop and set it to our string variable prodname
         prodname=listp[i].getName();
+        //we find the lenght
         lenght=prodname.length();
+        //and find the size of the magic word
         wordlenght=namecategory.size();
+        //we move around a for loop really similar to past exercises creating a substring and comparing it to the
+        //magic word
         for (int i = 0; i < lenght; i++)
         {
             thesub=prodname.substr(i,wordlenght);
+            //if they are equal a switch becomes true
             if(namecategory==thesub)
             {
                 wordmatches=true;
             }
         }
         
-       
+       //we check if the category and the word matches
         if(listp[i].getCategory()==category&&wordmatches==true)
         {
+            //in a array we save the position of the product
             products[counter]=i;
             ++counter;
+            //we set back to false
             wordmatches=false;
         }
         else
@@ -107,11 +122,14 @@ int searchNameCategory(string category,string namecategory,Product listp[],int p
             ++dummy;
         }
     }
+    //after is done if counter is 0 it will display a special message
     if (counter==0)
     {
         cout<<"No matching products found."<<endl;
         return 0;
-    }else
+    }
+    else
+    //if not it will return a list of products
     {
         cout<<"Here is a list of products that match this category-search word pair:"<<endl;
         for (int i = 0; i < counter; i++)
