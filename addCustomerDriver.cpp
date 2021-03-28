@@ -1,3 +1,9 @@
+// CS1300 Spring 2021
+// Author: Sergio Borrego
+// partner: Jake Kim
+// Recitation: 119 – Christen Malloy
+// Homework 7 - Problem # 9
+
 #include "Product.h"
 #include "Customer.h"
 #include <string>
@@ -27,7 +33,8 @@ int addCustomer(string customerName,Customer customerarr[],int numprods,int cust
      if (namfound==true)
      {
         return -1;
-     }else
+     }
+     else
      {
         customerarr[custmstored].setCustomerName(customerName);
         for (int i = 0; i < numprods; i++)

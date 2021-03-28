@@ -1,3 +1,9 @@
+// CS1300 Spring 2021
+// Author: Sergio Borrego
+
+// Recitation: 119 – Christen Malloy
+// Homework 7 - Problem # 4
+
 #include <iostream>
 #include <string>
 #include <iomanip>
