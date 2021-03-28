@@ -2,7 +2,7 @@
 // Author: Sergio Borrego
 // partner: Jake Kim
 // Recitation: 119 – Christen Malloy
-// Homework 7 - Problem # 10
+// Project2 - Problem # 10
 
 
 

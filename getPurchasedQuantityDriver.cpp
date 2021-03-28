@@ -2,7 +2,7 @@
 // Author: Sergio Borrego
 // partner: Jake Kim
 // Recitation: 119 – Christen Malloy
-// Homework 7 - Problem # 5 Print all products driver
+// Project2 - Problem # 5 Print all products driver
 
 #include "Product.h"
 #include "Customer.h"

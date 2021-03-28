@@ -1,7 +1,7 @@
 // CS1300 Spring 2021
 // Author: Sergio Borrego
 // Recitation: 119 – Christen Malloy
-// Homework 7 - Problem # 3 Definition of class functions file
+// Project 2 - Problem # 1 Definition of class functions file
 
 //Here I include my default libraries 
 #include <iostream>

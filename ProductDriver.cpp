@@ -1,7 +1,7 @@
 // CS1300 Spring 2021
 // Author: Sergio Borrego
 // Recitation: 119 – Christen Malloy
-// Homework 7 - Product Driver
+// Project 2 - Product Driver Problem 1
 #include <iostream>
 #include <string>
 #include <iomanip>

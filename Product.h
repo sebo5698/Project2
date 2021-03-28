@@ -1,7 +1,7 @@
 // CS1300 Spring 2021
 // Author: Sergio Borrego
 // Recitation: 119 – Christen Malloy
-// Homework 7 - Problem # 3 Products Classfile
+// Project 2 - Problem # 1 Products Classfile
 
 //Here I include my default librarys
 #include <iostream>
