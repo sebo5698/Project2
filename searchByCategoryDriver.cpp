@@ -128,8 +128,8 @@ int searchNameCategory(string category,string namecategory,Product listp[],int p
         cout<<"No matching products found."<<endl;
         return 0;
     }
-    else
     //if not it will return a list of products
+    else
     {
         cout<<"Here is a list of products that match this category-search word pair:"<<endl;
         for (int i = 0; i < counter; i++)
@@ -142,6 +142,9 @@ int searchNameCategory(string category,string namecategory,Product listp[],int p
     
 
 }
+
+
+//this is my testing ground
 int main()
 {
     Product array[5];
