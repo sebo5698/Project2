@@ -1,7 +1,7 @@
 // CS1300 Spring 2021
 // Author: Sergio Borrego
 // Recitation: 119 – Christen Malloy
-// Homework 7 - Problem # 5 Print all products driver
+// Project 2 - Problem # 3 Print all products driver
 
 //here as always include my libraries
 #include <iostream>
