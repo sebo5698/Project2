@@ -1,7 +1,8 @@
-// CSCI1300 Spring 2021
-// Author: Jake Kim
-// Recitation: 117 – Elizabeth Spaulding and Ash Duy
-// Project 2 - Problem #8
+// CS1300 Spring 2021
+// Author: Sergio Borrego
+// partner: Jake Kim
+// Recitation: 119 – Christen Malloy
+// Homework 7 - Problem # 5 Print all products driver
 
 #include "Product.h"
 #include "Customer.h"
